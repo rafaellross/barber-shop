@@ -7,67 +7,68 @@
 		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<style type="text/css">
-		 body .row, .row * {
-		 	border: 0px Black solid;
-		 }
+		@import url(http://weloveiconfonts.com/api/?family=zocial);
 
+		/* zocial */
+		[class*="zocial-"]:before {
+			font-family: 'zocial', sans-serif;
+			font-size: 1.5em;
+		}
+
+		.zocial-facebook:hover {
+			color: #3b5998;
+		}
 		 .container {
 		 	width: 90%;
 		 	margin-left: auto;
 		 	margin-right: auto;		 	
 		 }
 
-		 #logo img {
+		#logo img {
 		 	margin-left: 40%;
 		 }
-			
-		 #menuBar {
-		 	background-color: #080808;
-		 	height: 50px;
-		 	margin-top: 10px;
-		 	color: #fff;
-		 	list-style: none;
-		 }
+		#menuBar ul{
+		    padding: 0;
+		    list-style: none;
+		    background: #080808;
+		    color: #fff;
+		}
+		#menuBar ul li{
+		    display: inline-block;
+		    position: relative;
+		    line-height: 21px;
+		    text-align: left;
 
-		 #menuBar ul {
-	        padding: 0;
-	        list-style: none;
-	        height: 100%;		        
 		}
 
-	    #menuBar ul li{
-	        display: inline-block;
-	        position: relative;	        
-	        text-align: left;
-	        height: 100%;		        
+		#menuBar ul li a{
+		    display: block;
+		    padding: 8px 25px;
+		    color: #fff;
+		    text-decoration: none;
+		    width: 100%;
+		}
+		#menuBar ul li a:hover{
+		    color: #080808;
+		    background: #fff;
+		    width: 100%;
 
-	    }
-	    #menuBar ul li a{
-	        display: block;
-	        padding: 1em 25px;
-	        color: #fff;
-	        text-decoration: none;
-	    }
-	    #menuBar ul li a:hover{
-	        color: #080808;
-	        background: #fff;
-	        height: 100%;
-	        padding-top: 
-	    }
-	    #menuBar ul li ul {
-	        min-width: 125px; /* Set width of the dropdown */
-	        background: #f2f2f2;
-	        display: none;
-	        position: absolute;
-	        z-index: 999;
-	        left: 0;
-	    }
-	    ul li:hover ul.dropdown{
-	        display: block; /* Display the dropdown */
-	    }
-	    ul li ul.dropdown li{
-	        display: block;
-	    }
+		}
+		ul li ul.dropdown{
+		    background: #f2f2f2;		    
+		    width: 100%;
+		    display: none;
+		    position: absolute;
+		    z-index: 999;
+		    left: 0;
+		}
+		ul li:hover ul.dropdown{
+		    display: block;	/* Display the dropdown */
+		}
+		ul li ul.dropdown li{
+		    display: block;
+		}			
+
 		</style>
 	</head>	
 	<body>
@@ -86,12 +87,26 @@
 						<ul>
 							<li>
 								<a href="">Home</a>
+							</li>
 							<li>
 								<a href="">Sobre Nós</a>
+							</li>
 							<li>
 								<a href="">Contato</a>
+							</li>
+					        <li>
+					            <a href="#">Serviços &#9662;</a>
+					            <ul class="dropdown">
+					                <li><a href="#">Laptops</a></li>
+					                <li><a href="#">Monitors</a></li>
+					                <li><a href="#">Printers</a></li>
+					            </ul>
+					        </li>							
 							<li>
 								<a href="">Localização</a>							
+							</li>
+							<li class="social">
+								<span class="zocial-facebook"></span>
 							</li>	
 						</ul>
 					</div>
