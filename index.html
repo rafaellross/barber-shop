@@ -17,11 +17,13 @@
 
 		.zocial-facebook:hover {
 			color: #3b5998;
+
 		}
 		 .container {
 		 	width: 90%;
 		 	margin-left: auto;
-		 	margin-right: auto;		 	
+		 	margin-right: auto;
+		 	transition: background-color 0.5s ease;
 		 }
 
 		#logo img {
@@ -52,18 +54,21 @@
 		    color: #080808;
 		    background: #fff;
 		    width: 100%;
+		    transition: background-color 0.5s ease;
 
 		}
 		ul li ul.dropdown{
-		    background: #f2f2f2;		    
+		    background: #fff;		    
 		    width: 100%;
 		    display: none;
 		    position: absolute;
 		    z-index: 999;
 		    left: 0;
+		    transition: background-color 0.5s ease;
 		}
 		ul li:hover ul.dropdown{
-		    display: block;	/* Display the dropdown */
+			transition: display 0.5s ease;
+		    display: block;	/* Display the dropdown */		    
 		}
 		ul li ul.dropdown li{
 		    display: block;
