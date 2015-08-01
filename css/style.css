@@ -1,0 +1,106 @@
+        @import url(http://weloveiconfonts.com/api/?family=zocial);
+
+        /* zocial */
+        [class*="zocial-"]:before {
+            font-family: 'zocial', sans-serif;
+            font-size: 1.5em;
+        }
+
+        .zocial-facebook:hover {
+            color: #3b5998;
+
+        }
+
+         .container {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            transition: background-color 0.5s ease;
+         }
+
+        #logo img {
+            margin-left: 40%;
+         }
+
+        #menuBar ul{
+            padding: 0;
+            list-style: none;
+            background-image: linear-gradient(to bottom, #202020, #080808 130%);
+            color: #fff;
+        }
+        #menuBar ul li{
+            display: inline-block;
+            position: relative;
+            line-height: 31px;
+            text-align: left;
+
+        }
+
+        #menuBar ul li a{
+            display: block;
+            padding: 8px 25px;
+            color: #fff;
+            text-decoration: none;
+            width: 100%;
+        }
+
+        #menuBar ul li a:hover{
+            color: #080808;
+            background-image: linear-gradient(to bottom, #D8D8D8, #C8C8C8 130%);
+            width: 100%;
+            transition: background-color 0.5s ease;
+
+        }
+
+        ul li ul.dropdown{
+            background: #fff;
+            display: none;
+            position: absolute;
+            z-index: 999;
+            left: 0;
+            transition: background-color 0.5s ease;
+        }
+
+        .dropdown li {
+            width: 100%;
+        }
+
+        ul li:hover ul.dropdown{
+            transition: display 0.5s ease;
+            display: block; /* Display the dropdown */
+        }
+
+        ul li ul.dropdown li{
+            display: block;
+        }
+
+        #logo img {
+            max-width: 65%;
+
+        }
+
+        #modal {
+            z-index: 999;
+            width: 100%;
+            height: 700px;
+            background-color: gray;
+            position: absolute;
+            opacity: 0.6;
+            background-image: url(http://www.picgifs.com/graphics/s/scissors/graphics-scissors-122058.gif);
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+
+        @media screen and (min-width: 600px) {
+            .social {
+                display: none;
+            }
+
+            #menuBar ul li{
+                display: table-caption;
+                position: absolute;
+                text-align: left;
+            }
+        }
+

@@ -2,80 +2,14 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>.:: Barbearia Black And white ::.</title>		
-		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>.:: Barbearia Black And white ::.</title>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="js/functions.js"></script>
 		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		<style type="text/css">
-		@import url(http://weloveiconfonts.com/api/?family=zocial);
-
-		/* zocial */
-		[class*="zocial-"]:before {
-			font-family: 'zocial', sans-serif;
-			font-size: 1.5em;
-		}
-
-		.zocial-facebook:hover {
-			color: #3b5998;
-
-		}
-		 .container {
-		 	width: 90%;
-		 	margin-left: auto;
-		 	margin-right: auto;
-		 	transition: background-color 0.5s ease;
-		 }
-
-		#logo img {
-		 	margin-left: 40%;
-		 }
-		#menuBar ul{
-		    padding: 0;
-		    list-style: none;
-		    background: #080808;
-		    color: #fff;
-		}
-		#menuBar ul li{
-		    display: inline-block;
-		    position: relative;
-		    line-height: 21px;
-		    text-align: left;
-
-		}
-
-		#menuBar ul li a{
-		    display: block;
-		    padding: 8px 25px;
-		    color: #fff;
-		    text-decoration: none;
-		    width: 100%;
-		}
-		#menuBar ul li a:hover{
-		    color: #080808;
-		    background: #fff;
-		    width: 100%;
-		    transition: background-color 0.5s ease;
-
-		}
-		ul li ul.dropdown{
-		    background: #fff;		    
-		    width: 100%;
-		    display: none;
-		    position: absolute;
-		    z-index: 999;
-		    left: 0;
-		    transition: background-color 0.5s ease;
-		}
-		ul li:hover ul.dropdown{
-			transition: display 0.5s ease;
-		    display: block;	/* Display the dropdown */		    
-		}
-		ul li ul.dropdown li{
-		    display: block;
-		}			
-
-		</style>
-	</head>	
+	</head>
 	<body>
 		<div class="container">
 			<header>
@@ -84,7 +18,7 @@
 				  	<h1 class="text-center">Barbearia Black And White</h1>
 				  </div>
 				  <div id="logo" class="col-md-3">
-				  	<img src="http://placehold.it/120x100" alt="Logo" class="img-circle text-right">		
+				  	<img src="logo.jpg" alt="Logo" class="img-responsive text-right">
 				  </div>
 				</div>
 				<div class="row">
@@ -102,27 +36,36 @@
 					        <li>
 					            <a href="#">Serviços &#9662;</a>
 					            <ul class="dropdown">
-					                <li><a href="#">Laptops</a></li>
-					                <li><a href="#">Monitors</a></li>
+					                <li><a href="#">Cabelo Afro</a></li>
+					                <li><a href="#">Pintura de Barba</a></li>
 					                <li><a href="#">Printers</a></li>
 					            </ul>
-					        </li>							
+					        </li>
 							<li>
-								<a href="">Localização</a>							
+								<a href="">Localização</a>
 							</li>
 							<li class="social">
 								<span class="zocial-facebook"></span>
-							</li>	
+							</li>
 						</ul>
 					</div>
 				</div>
-			</header>		
+			</header>
 			<main>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, incidunt magnam minus exercitationem, repellat at odit molestias. Quis quaerat, dolorem! Cupiditate consequatur voluptas laudantium accusantium, sit saepe sapiente et, fuga.
-				</p>	
-			</main>		
-			<footer>			
+				</p>
+			</main>
+			<footer>
+				<div class="panel panel-default">
+					  <div class="panel-body">
+							Panel content
+					  </div>
+					  <div class="panel-footer">
+							Panel footer
+						</div>
+				</div>
+
 			</footer>
-		</div>	
+		</div>
 	</body>
 </html>
